@@ -1,0 +1,26 @@
+
+Basic Usage:
+
+<div id="banner">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="path-to-jquery"></script>
+<script type="text/javascript" src="/js/eternalSlider.min.js"></script>
+<script type="text/javascript">
+    var slider = new eternalSlider({
+        'path':         '#banner',  // Path to div
+        'interval':     4000,       // Interval for setTimeout
+        'length':       1500,       // Animation length
+        'next':         '.nextBtn', // Path to next button(s)
+        'previous':     '.prevBtn'  // Path to previous button(s)
+    });
+
+    slider.go();
+</script>
+
